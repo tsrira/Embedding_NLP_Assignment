@@ -25,20 +25,6 @@ To use GloVe embeddings:
 2. Choose: `glove.6B.zip`
 3. Unzip and place the file `glove.6B.100d.txt` in your project directory.
 
-### 📌 Load GloVe into a Dictionary
-
-```python
-glove_embeddings = {}
-with open("glove.6B.100d.txt", 'r', encoding='utf-8') as f:
-    for line in f:
-        values = line.split()
-        word = values[0]
-        vector = np.asarray(values[1:], dtype='float32')
-        glove_embeddings[word] = vector
-```
-
----
-
 ## 🔧 Step-by-Step Implementation
 
 ### 1️⃣ Setup & Preprocessing
@@ -119,9 +105,3 @@ pip install pandas numpy nltk gensim scikit-learn matplotlib seaborn
 2. Download and place GloVe file as described above.
 
 3. Run the notebook: `Sriram_Embedding_Assignment.ipynb`
-
----
-
-## 📄 License
-
-This project is for academic and educational purposes.
